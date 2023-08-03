@@ -11,23 +11,26 @@ body {
     align-items: center;
 }
 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     width: 95%;
     padding-bottom: 1rem;
     background-color: #121212;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+form input[type=password], form input[type=email], form input[type=number], form textarea {
+  margin-top: 1rem;
 }
 h1 {
     color: white;
     margin: 1rem 0;
     font-size: 24px;
 }
-p {
+p, label {
     color: white;
 }
 input[type=text] {
@@ -52,7 +55,6 @@ input[type=email] {
     border-radius: 5px;
     width: 90%;
     color: white;
-    margin-top: 1rem;
 }
 input[type=email]:hover, input[type=email]:focus {
     outline: none;
@@ -66,7 +68,6 @@ input[type=password] {
     border-radius: 5px;
     width: 90%;
     color: white;
-    margin-top: 1rem;
 }
 input[type=password]:hover, input[type=password]:focus {
     outline: none;
@@ -80,7 +81,6 @@ input[type=number] {
     border-radius: 5px;
     width: 90%;
     color: white;
-    margin-top: 1rem;
 }
 input[type=number]:hover, input[type=number]:focus {
     outline: none;
@@ -93,7 +93,6 @@ textarea {
     border-radius: 5px;
     width: 90%;
     color: white;
-    margin-top: 1rem;
     padding: 0.5rem;
 }
 textarea:hover {
@@ -116,13 +115,14 @@ form button {
 form p {
     margin-top: 1rem;
     font-weight: 600;
-}
+    text-align: center;
+} 
+
 .radio {
     display: flex;
     flex-direction: row;
     margin-top: 0.2rem;
 }
-
 .radio .list {
     display: flex;
     flex-direction: row-reverse;
